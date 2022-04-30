@@ -11,7 +11,7 @@ import (
 	model "github.com/unidoc/unipdf/model"
 )
 
-func ParsePDFInFolder(path string) {
+func ParsePDFsInFolder(path string) {
 	files, err := ioutil.ReadDir(".")
 	if err != nil {
 		log.Fatal(err)

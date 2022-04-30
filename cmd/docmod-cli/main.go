@@ -3,13 +3,15 @@ package main
 import (
 	"fmt"
 
-	docgen "github.com/lawstarlabs/docgen"
+	docmod "github.com/wade-welles/docmod"
 )
 
 const cwd = "."
 
 func main() {
-	fmt.Println("docgen")
+	fmt.Println("docmod")
+	fmt.Println("======")
+	fmt.Println("Checking for PDFs in the current working directory ( " + cwd + " )")
 
-	docgen.ParsePDFsInFolder(cwd)
+	docmod.ParsePDFsInFolder(cwd)
 }
